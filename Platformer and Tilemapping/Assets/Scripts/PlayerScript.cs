@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     public Text score;
 
-    //public TextMeshPro winText;
+    public Text winText;
 
     private int scoreValue = 0;
 
@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour
     {
         rd2d = GetComponent<Rigidbody2D>();
         score.text = scoreValue.ToString();
-        //winText.text = "Coucou";
+        winText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
