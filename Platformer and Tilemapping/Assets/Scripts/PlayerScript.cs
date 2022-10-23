@@ -62,6 +62,7 @@ public class PlayerScript : MonoBehaviour
             {
                 winLoseText.text = "You lose!\nGame Created by Mia Parent";
                 winLoseText.gameObject.SetActive(true);
+                rd2d.gameObject.SetActive(false);
             }
         }
 
