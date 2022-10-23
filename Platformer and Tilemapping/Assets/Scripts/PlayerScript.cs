@@ -16,6 +16,8 @@ public class PlayerScript : MonoBehaviour
 
     public Text winText;
 
+    public Text lives;
+
     private int scoreValue = 0;
 
 
