@@ -51,6 +51,7 @@ public class PlayerScript : MonoBehaviour
             {
                 winLoseText.text = "You win!\nGame Created by Mia Parent";
                 winLoseText.gameObject.SetActive(true);
+                rd2d.gameObject.SetActive(false);
             }
         }
         else if (collision.collider.tag == "Enemy")
