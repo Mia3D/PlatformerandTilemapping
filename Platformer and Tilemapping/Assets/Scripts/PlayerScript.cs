@@ -42,7 +42,7 @@ public class PlayerScript : MonoBehaviour
             scoreValue += 1;
             score.text = scoreValue.ToString();
             Destroy(collision.collider.gameObject);
-            if (scoreValue>=1)
+            if (scoreValue>=4)
             {
                 winText.gameObject.SetActive(true);
             }
