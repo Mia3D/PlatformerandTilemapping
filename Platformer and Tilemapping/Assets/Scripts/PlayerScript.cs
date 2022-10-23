@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlayerScript : MonoBehaviour
 
     public Text score;
 
+    //public TextMeshPro winText;
+
     private int scoreValue = 0;
 
 
@@ -21,6 +24,7 @@ public class PlayerScript : MonoBehaviour
     {
         rd2d = GetComponent<Rigidbody2D>();
         score.text = scoreValue.ToString();
+        //winText.text = "Coucou";
     }
 
     // Update is called once per frame
