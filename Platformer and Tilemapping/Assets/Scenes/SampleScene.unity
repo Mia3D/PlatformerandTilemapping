@@ -2875,7 +2875,7 @@ GameObject:
   - component: {fileID: 1010585161}
   m_Layer: 0
   m_Name: Coin Parent
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3330,7 +3330,7 @@ GameObject:
   - component: {fileID: 1358916292}
   m_Layer: 0
   m_Name: Enemy Parent
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

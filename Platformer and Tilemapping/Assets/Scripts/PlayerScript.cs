@@ -52,6 +52,12 @@ public class PlayerScript : MonoBehaviour
                 winText.gameObject.SetActive(true);
             }
         }
+        else if (collision.collider.tag == "Enemy")
+        {
+            livesCount -= 1;
+            livesText.text = "Lives: " + livesCount.ToString();
+            Destroy(collision.collider.gameObject);
+        }
 
     }
 
