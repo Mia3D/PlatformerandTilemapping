@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     public Text score;
 
-    public Text winText;
+    public Text winLoseText;
 
     public Text livesText;
 
@@ -29,7 +29,7 @@ public class PlayerScript : MonoBehaviour
         rd2d = GetComponent<Rigidbody2D>();
         score.text = "Score: " + scoreValue.ToString();
         livesText.text = "Lives: " + livesCount.ToString();
-        winText.gameObject.SetActive(false);
+        winLoseText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,7 +49,8 @@ public class PlayerScript : MonoBehaviour
             Destroy(collision.collider.gameObject);
             if (scoreValue>=4)
             {
-                winText.gameObject.SetActive(true);
+                winLoseText.text = "You win!\nGame Created by Mia Parent";
+                winLoseText.gameObject.SetActive(true);
             }
         }
         else if (collision.collider.tag == "Enemy")
@@ -57,6 +58,11 @@ public class PlayerScript : MonoBehaviour
             livesCount -= 1;
             livesText.text = "Lives: " + livesCount.ToString();
             Destroy(collision.collider.gameObject);
+            if (livesCount<=0)
+            {
+                winLoseText.text = "You lose!\nGame Created by Mia Parent";
+                winLoseText.gameObject.SetActive(true);
+            }
         }
 
     }

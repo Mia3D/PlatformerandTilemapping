@@ -3249,7 +3249,7 @@ GameObject:
   - component: {fileID: 1311230085}
   - component: {fileID: 1311230084}
   m_Layer: 5
-  m_Name: WinText
+  m_Name: WinLoseText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3484,7 +3484,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 3
   score: {fileID: 1613271113}
-  winText: {fileID: 1311230084}
+  winLoseText: {fileID: 1311230084}
   livesText: {fileID: 558711593}
 --- !u!61 &1397418091
 BoxCollider2D:
