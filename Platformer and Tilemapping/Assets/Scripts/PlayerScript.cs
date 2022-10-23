@@ -16,16 +16,19 @@ public class PlayerScript : MonoBehaviour
 
     public Text winText;
 
-    public Text lives;
+    public Text livesText;
 
     private int scoreValue = 0;
+
+    private int livesCount = 3;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rd2d = GetComponent<Rigidbody2D>();
-        score.text = scoreValue.ToString();
+        score.text = "Score: " + scoreValue.ToString();
+        livesText.text = "Lives: " + livesCount.ToString();
         winText.gameObject.SetActive(false);
     }
 
@@ -42,7 +45,7 @@ public class PlayerScript : MonoBehaviour
        if (collision.collider.tag == "Coin")
         {
             scoreValue += 1;
-            score.text = scoreValue.ToString();
+            score.text = "Score: " + scoreValue.ToString();
             Destroy(collision.collider.gameObject);
             if (scoreValue>=4)
             {

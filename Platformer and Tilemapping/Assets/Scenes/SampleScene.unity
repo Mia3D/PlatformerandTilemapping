@@ -3485,7 +3485,7 @@ MonoBehaviour:
   jumpForce: 3
   score: {fileID: 1613271113}
   winText: {fileID: 1311230084}
-  lives: {fileID: 558711593}
+  livesText: {fileID: 558711593}
 --- !u!61 &1397418091
 BoxCollider2D:
   m_ObjectHideFlags: 0
