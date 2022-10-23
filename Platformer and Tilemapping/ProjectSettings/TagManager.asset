@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - ScoreText
   - WinText
+  - Enemy
+  - LivesText
   layers:
   - Default
   - TransparentFX
